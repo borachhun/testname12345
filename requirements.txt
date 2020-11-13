@@ -1,0 +1,5 @@
+Flask
+requests
+gunicorn
+psycopg2
+sqlite3
