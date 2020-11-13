@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Home</title>
+		<style>
+			table, td
+			{
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>List of names</h2><br>
+		<table>
+			<th>
+				<td>No.</td>
+				<td>Name</td>
+			</th>
+			{% for row in rows %}
+			<tr>
+				<td>{{ row[0] }}</td>
+				<td>{{ row[1] }}</td>
+			</tr>
+			{% endfor %}
+		</table><br>
+		<a href="/add">Add name</a>
+	</body>
+</html>
